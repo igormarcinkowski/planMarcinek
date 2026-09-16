@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan lekcji</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Plan lekcji</h1>
+    <div class="filters">
+      <div class="filter-row primary-filters">
+        <label>Widok
+          <select id="kind">
+            <option value="class">Klasa</option>
+            <option value="teacher">Nauczyciel</option>
+            <option value="room">Sala</option>
+          </select>
+        </label>
+        <label>Wybór
+          <select id="value"></select>
+        </label>
+        <div class="choice-panel religion-panel">
+          <span class="religion-title">Religia</span>
+          <label class="check-choice">
+            <input id="religion" type="checkbox">
+            Chodzę
+          </label>
+        </div>
+        <div class="favorite-class-controls">
+          <button id="favorite-class-button" class="favorite-class-button" type="button"
+            aria-label="Oznacz wybraną klasę jako ulubioną" title="Oznacz jako moją klasę">☆</button>
+          <div id="favorite-class-panel" class="favorite-class-panel" hidden>
+            <span id="favorite-class-name"></span>
+            <button id="favorite-class-open" type="button">Otwórz ulubiony widok</button>
+          </div>
+        </div>
+      </div>
+      <div class="filter-row group-filters">
+        <fieldset id="group-field" class="choice-panel">
+          <legend>Grupa przedmiotowa</legend>
+          <div id="group"></div>
+        </fieldset>
+        <fieldset id="wf-group-field" class="choice-panel">
+          <legend>Grupa WF</legend>
+          <div id="wf-group"></div>
+        </fieldset>
+      </div>
+    </div>
+    <div id="selection-badge" class="selection-badge" aria-live="polite">
+      <span class="selection-badge-kind">Plan</span>
+      <strong>Ładowanie...</strong>
+    </div>
+    <p id="status">Ładowanie planu...</p>
+    <div class="table-wrap">
+      <table>
+        <thead id="header"></thead>
+        <tbody id="lessons"></tbody>
+      </table>
+    </div>
+    <div class="schedule-legend" aria-label="Legenda planu">
+      <span><i class="legend-color current-color"></i>Aktualna lekcja</span>
+      <span><i class="legend-color next-color"></i>Najbliższa lekcja</span>
+      <span><i class="legend-color substitution-color"></i>Zastępstwo</span>
+    </div>
+    <section class="dashboard" aria-label="Informacje i odliczania">
+      <div class="countdown-card">
+        <span>Najbliższa lekcja</span>
+        <strong id="lesson-countdown">--</strong>
+        <small id="lesson-detail"></small>
+      </div>
+      <div class="countdown-card">
+        <span>Najbliższy weekend</span>
+        <strong id="weekend-countdown">--</strong>
+      </div>
+      <div class="countdown-card">
+        <span>Do najbliższego dnia wolnego</span>
+        <strong id="holiday-countdown">--</strong>
+        <small id="holiday-name"></small>
+      </div>
+      <div class="countdown-card">
+        <span>Do matur</span>
+        <strong id="exam-countdown">--</strong>
+      </div>
+      <div class="countdown-card vacation-card">
+        <span>Do początku wakacji</span>
+        <strong id="vacation-countdown">--</strong>
+      </div>
+      <div class="holidays-card">
+        <h2>Dni wolne</h2>
+        <ul id="holidays"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

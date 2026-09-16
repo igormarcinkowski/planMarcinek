@@ -1,0 +1,26 @@
+{
+  "source": "https://zse.bydgoszcz.pl/main.php?page=31198&pnr=1&down=1&h=1",
+  "academicYear": "2026/2027",
+  "exams": "2027-05-04T09:00:00",
+  "vacation": "2027-06-25T15:00:00",
+  "holidays": [
+    {"name": "Dzień Nauczyciela", "start": "2026-10-14", "end": "2026-10-15", "type": "holiday"},
+    {"name": "Wszystkich Świętych", "start": "2026-11-01", "end": "2026-11-02", "type": "holiday"},
+    {"name": "Narodowe Święto Niepodległości", "start": "2026-11-11", "end": "2026-11-12", "type": "holiday"},
+    {"name": "Zimowa przerwa świąteczna", "start": "2026-12-23", "end": "2027-01-02", "type": "break"},
+    {"name": "Trzech Króli", "start": "2027-01-06", "end": "2027-01-07", "type": "holiday"},
+    {"name": "Ferie zimowe", "start": "2027-02-15", "end": "2027-03-01", "type": "break"},
+    {"name": "Wiosenna przerwa świąteczna", "start": "2027-03-25", "end": "2027-03-31", "type": "break"},
+    {"name": "Święto Pracy", "start": "2027-05-01", "end": "2027-05-02", "type": "holiday"},
+    {"name": "Święto Konstytucji 3 Maja", "start": "2027-05-03", "end": "2027-05-04", "type": "holiday"},
+    {"name": "Boże Ciało", "start": "2027-05-27", "end": "2027-05-28", "type": "holiday"},
+    {"name": "Dni dyrektorskie", "start": "2027-01-08", "end": "2027-01-09", "type": "dwozd"},
+    {"name": "Dni dyrektorskie", "start": "2027-05-04", "end": "2027-05-05", "type": "dwozd"},
+    {"name": "Dni dyrektorskie", "start": "2027-05-05", "end": "2027-05-06", "type": "dwozd"},
+    {"name": "Dni dyrektorskie", "start": "2027-05-06", "end": "2027-05-07", "type": "dwozd"},
+    {"name": "Dni dyrektorskie", "start": "2027-05-07", "end": "2027-05-08", "type": "dwozd"},
+    {"name": "Dni dyrektorskie", "start": "2027-05-17", "end": "2027-05-18", "type": "dwozd"},
+    {"name": "Dni dyrektorskie", "start": "2027-05-28", "end": "2027-05-29", "type": "dwozd"},
+    {"name": "Dni dyrektorskie", "start": "2027-06-24", "end": "2027-06-25", "type": "dwozd"}
+  ]
+}
