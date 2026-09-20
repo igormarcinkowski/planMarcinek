@@ -148,6 +148,10 @@ h1 {
   box-shadow: 0 4px 14px rgba(202, 138, 4, .2);
 }
 
+.favorite-class-panel[hidden] {
+  display: none;
+}
+
 .favorite-class-controls > .favorite-class-button {
   align-self: center;
 }
@@ -711,12 +715,17 @@ small {
   }
 
   .favorite-class-controls {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
     align-items: stretch;
     width: 100%;
     min-width: 0;
+    gap: 9px;
   }
 
   .favorite-class-panel {
+    min-width: 0;
+    width: 100%;
     align-items: stretch;
     flex-direction: column;
     white-space: normal;

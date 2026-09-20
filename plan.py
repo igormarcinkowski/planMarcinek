@@ -119,6 +119,34 @@ def parse_class_plan(
             ]
             teachers = cell.find_all("a", class_="n")
             rooms = cell.find_all("a", class_="s")
+            wf_teachers = {}
+            wf_rooms = {}
+            for subject_span in subject_spans:
+                subject_text = subject_span.get_text(" ", strip=True)
+                sibling = subject_span.next_sibling
+                if isinstance(sibling, NavigableString):
+                    suffix = sibling.strip().split(" ")[0]
+                    if suffix.startswith("-"):
+                        subject_text += suffix
+                wf_match = re.match(r"wf-(j[12])$", subject_text)
+                if not wf_match:
+                    continue
+                wf_group = {"j1": "1/2", "j2": "2/2"}[wf_match.group(1)]
+                for sibling in subject_span.next_elements:
+                    if getattr(sibling, "name", None) == "br":
+                        break
+                    if (
+                        getattr(sibling, "name", None) == "span"
+                        and "p" in sibling.get("class", [])
+                    ):
+                        break
+                    if getattr(sibling, "name", None) != "a":
+                        continue
+                    classes = sibling.get("class", [])
+                    if "n" in classes and wf_group not in wf_teachers:
+                        wf_teachers[wf_group] = sibling.get_text(" ", strip=True)
+                    if "s" in classes and wf_group not in wf_rooms:
+                        wf_rooms[wf_group] = sibling.get_text(" ", strip=True)
             for selected, subject in enumerate(subjects):
                 group_match = re.search(r"-([123])/([23])$", subject)
                 group = (
@@ -148,7 +176,9 @@ def parse_class_plan(
                 if subject.startswith("religia"):
                     teacher = "T. Poćwiardowski"
                 elif subject == "wf":
-                    teacher = "Ł. Dolski"
+                    wf_teacher_code = wf_teachers.get(wf_group, "Do")
+                    teacher = teacher_names.get(wf_teacher_code, wf_teacher_code)
+                    room = wf_rooms.get(wf_group, room)
                 if subject == "brak":
                     teacher = room = "brak"
 
