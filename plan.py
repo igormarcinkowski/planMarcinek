@@ -13,7 +13,8 @@ BASE_URL = "https://plan.zse.bydgoszcz.pl/"
 DIRECTORY_URL = urljoin(BASE_URL, "lista.html")
 DAYS = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek"]
 VALIDITY_RE = re.compile(
-    r"Obowi.{0,3}zuje od:\s*(\d{2}\.\d{2}\.\d{4})\s*r\.\s*do\s*(\d{2}\.\d{2}\.\d{4})\s*r\.",
+    r"Obowi.{0,3}zuje od:\s*(\d{2}\.\d{2}\.\d{4})\s*r\."
+    r"(?:\s*(?:-\s*)?do\s*(\d{2}\.\d{2}\.\d{4})\s*r\.)?",
     re.IGNORECASE,
 )
 WARSAW = ZoneInfo("Europe/Warsaw")
@@ -37,7 +38,11 @@ def read_validity(soup: BeautifulSoup) -> dict[str, str]:
     if not match:
         raise RuntimeError("Nie znaleziono daty obowiązywania planu")
     start = datetime.strptime(match.group(1), "%d.%m.%Y").date()
-    end = datetime.strptime(match.group(2), "%d.%m.%Y").date()
+    end = (
+        datetime.strptime(match.group(2), "%d.%m.%Y").date()
+        if match.group(2)
+        else start
+    )
     return {"from": start.isoformat(), "to": end.isoformat()}
 
 
