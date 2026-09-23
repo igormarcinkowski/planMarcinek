@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <aside class="theme-switcher" aria-label="Motyw strony">
+    <span>Motyw</span>
+    <div class="theme-options">
+      <button class="theme-button" data-theme-choice="light" type="button" aria-label="Jasny motyw">Jasny</button>
+      <button class="theme-button" data-theme-choice="dark" type="button" aria-label="Ciemny motyw">Ciemny</button>
+      <button class="theme-button" data-theme-choice="purple" type="button" aria-label="Fioletowy motyw">Fiolet</button>
+      <button class="theme-button" data-theme-choice="red" type="button" aria-label="Czerwony motyw">Czerwony</button>
+      <button class="theme-button" data-theme-choice="green" type="button" aria-label="Zielony motyw">Zielony</button>
+    </div>
+  </aside>
   <main>
     <h1>Plan lekcji</h1>
     <div class="filters">
@@ -53,8 +63,16 @@
       <strong>Ładowanie...</strong>
     </div>
     <p id="status">Ładowanie planu...</p>
+    <div class="table-tools" aria-label="Sterowanie tabelą planu">
+      <span class="table-tools-hint">Przesuń tabelę w bok albo zmień jej rozmiar</span>
+      <div class="table-zoom-controls">
+        <button id="table-zoom-out" type="button" aria-label="Pomniejsz tabelę">−</button>
+        <button id="table-zoom-reset" type="button" aria-label="Przywróć rozmiar tabeli">100%</button>
+        <button id="table-zoom-in" type="button" aria-label="Powiększ tabelę">+</button>
+      </div>
+    </div>
     <div class="table-wrap">
-      <table>
+      <table id="schedule-table">
         <thead id="header"></thead>
         <tbody id="lessons"></tbody>
       </table>
@@ -86,6 +104,11 @@
       <div class="countdown-card vacation-card">
         <span>Do początku wakacji</span>
         <strong id="vacation-countdown">--</strong>
+      </div>
+      <div class="countdown-card exam-session-card">
+        <span id="exam-session-name">Egzamin zawodowy</span>
+        <strong id="exam-session-countdown">--</strong>
+        <small id="exam-session-detail"></small>
       </div>
       <div class="holidays-card">
         <h2>Dni wolne</h2>

@@ -14,8 +14,17 @@ const favoriteClassButton = document.querySelector("#favorite-class-button");
 const favoriteClassPanel = document.querySelector("#favorite-class-panel");
 const favoriteClassName = document.querySelector("#favorite-class-name");
 const favoriteClassOpen = document.querySelector("#favorite-class-open");
+const scheduleTable = document.querySelector("#schedule-table");
+const tableZoomOut = document.querySelector("#table-zoom-out");
+const tableZoomReset = document.querySelector("#table-zoom-reset");
+const tableZoomIn = document.querySelector("#table-zoom-in");
+const themeButtons = document.querySelectorAll(".theme-button");
 let data;
 let calendar;
+const tableZoomMin = 0.7;
+const tableZoomMax = 1.2;
+const tableZoomStep = 0.1;
+const themes = ["light", "dark", "purple", "red", "green"];
 const lessonHours = {
   0: ["07:05", "07:50"], 1: ["08:00", "08:45"],
   2: ["08:55", "09:40"], 3: ["09:50", "10:35"],
@@ -427,6 +436,31 @@ function nextLessonDate(rows, now) {
   return result;
 }
 
+function nextVocationalExamSession(now) {
+  const sessions = [];
+  const monthNames = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca",
+    "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+  for (let year = now.getFullYear() - 1; year <= now.getFullYear() + 1; year += 1) {
+    sessions.push(
+      {
+        name: "Egzamin zawodowy - sesja zimowa",
+        start: new Date(year, 0, 8),
+        end: new Date(year, 0, 20),
+        dates: `8–19 ${monthNames[0]} ${year}`,
+      },
+      {
+        name: "Egzamin zawodowy - sesja letnia",
+        start: new Date(year, 5, 4),
+        end: new Date(year, 5, 16),
+        dates: `4–15 ${monthNames[5]} ${year}`,
+      },
+    );
+  }
+  return sessions
+    .sort((a, b) => a.start - b.start)
+    .find((session) => session.end > now);
+}
+
 function updateCountdowns(rows = []) {
   const now = new Date();
   const lessonState = lessonStateFor(rows, now);
@@ -463,6 +497,16 @@ function updateCountdowns(rows = []) {
   const vacation = new Date(calendar?.vacation || fallbackCalendar.vacation);
   setCountdownText(document.querySelector("#vacation-countdown"), vacation > now
     ? formatDuration(vacation - now) : "WAKACJE TRWAJĄ");
+
+  const examSession = nextVocationalExamSession(now);
+  const examSessionName = document.querySelector("#exam-session-name");
+  const examSessionDetail = document.querySelector("#exam-session-detail");
+  examSessionName.textContent = examSession.name;
+  examSessionDetail.textContent = examSession.dates;
+  setCountdownText(document.querySelector("#exam-session-countdown"),
+    examSession.start <= now && now < examSession.end
+      ? "SESJA TRWA"
+      : formatDuration(examSession.start - now));
 }
 
 function setCountdownText(element, text) {
@@ -471,6 +515,27 @@ function setCountdownText(element, text) {
   element.classList.remove("countdown-updated");
   void element.offsetWidth;
   element.classList.add("countdown-updated");
+}
+
+function setTableZoom(zoom) {
+  const boundedZoom = Math.min(tableZoomMax, Math.max(tableZoomMin, zoom));
+  const roundedZoom = Math.round(boundedZoom * 10) / 10;
+  scheduleTable.style.zoom = roundedZoom;
+  tableZoomReset.textContent = `${Math.round(roundedZoom * 100)}%`;
+  tableZoomOut.disabled = roundedZoom <= tableZoomMin;
+  tableZoomIn.disabled = roundedZoom >= tableZoomMax;
+  localStorage.setItem("schedule-table-zoom", String(roundedZoom));
+}
+
+function setTheme(theme) {
+  const selectedTheme = themes.includes(theme) ? theme : "light";
+  document.body.dataset.theme = selectedTheme;
+  for (const button of themeButtons) {
+    const isSelected = button.dataset.themeChoice === selectedTheme;
+    button.classList.toggle("is-selected", isSelected);
+    button.setAttribute("aria-pressed", String(isSelected));
+  }
+  localStorage.setItem("page-theme", selectedTheme);
 }
 
 function visibleLessons() {
@@ -721,5 +786,17 @@ favoriteClassOpen.addEventListener("click", () => {
   updateFavoriteClass();
   renderLessons();
 });
+tableZoomOut.addEventListener("click", () => {
+  setTableZoom(Number(scheduleTable.style.zoom || 1) - tableZoomStep);
+});
+tableZoomReset.addEventListener("click", () => setTableZoom(1));
+tableZoomIn.addEventListener("click", () => {
+  setTableZoom(Number(scheduleTable.style.zoom || 1) + tableZoomStep);
+});
+setTableZoom(Number(localStorage.getItem("schedule-table-zoom")) || 1);
+for (const button of themeButtons) {
+  button.addEventListener("click", () => setTheme(button.dataset.themeChoice));
+}
+setTheme(localStorage.getItem("page-theme") || "light");
 load().catch((error) => { status.textContent = error.message; });
 setInterval(() => updateCountdowns(visibleLessons()), 1000);
