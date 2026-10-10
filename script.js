@@ -8,7 +8,12 @@ const religion = document.querySelector("#religion");
 const lessons = document.querySelector("#lessons");
 const header = document.querySelector("#header");
 const status = document.querySelector("#status");
+const weeklyHours = document.querySelector("#weekly-hours");
+const substitutionCount = document.querySelector("#substitution-count");
+const substitutionUpdated = document.querySelector("#substitution-updated");
 const holidayName = document.querySelector("#holiday-name");
+const dutyNumbers = document.querySelector("#duty-numbers");
+const dutyWeek = document.querySelector("#duty-week");
 const selectionBadge = document.querySelector("#selection-badge");
 const favoriteClassButton = document.querySelector("#favorite-class-button");
 const favoriteClassPanel = document.querySelector("#favorite-class-panel");
@@ -154,8 +159,6 @@ function updateFavoriteClass() {
   favoriteClassPanel.hidden = !favorite || !favoriteOptions.includes(favorite.value);
   const favoriteGroups = favorite
     ? [
-      favorite.group2,
-      favorite.group3,
       favorite.kind === "class" && favorite.group2,
       favorite.kind === "class" && favorite.group3,
       favorite.kind === "class" && favorite.wfGroup && `WF ${favorite.wfGroup}`,
@@ -203,13 +206,19 @@ function renderGroupFamily(title, options, selected, name) {
 
 function renderChoiceRadios(container, options, selected, name) {
   container.replaceChildren();
+  const choices = document.createElement("div");
+  choices.className = "group-family wf-family";
+  const heading = document.createElement("span");
+  heading.className = "group-family-title";
+  heading.textContent = "Podział na grupy WF";
+  choices.append(heading);
   const all = document.createElement("label");
   const allInput = document.createElement("input");
   allInput.type = "radio";
   allInput.name = name;
   allInput.value = "";
   all.append(allInput, document.createTextNode(" Wszystkie"));
-  container.append(all);
+  choices.append(all);
   for (const item of options.sort()) {
     const label = document.createElement("label");
     const input = document.createElement("input");
@@ -217,11 +226,12 @@ function renderChoiceRadios(container, options, selected, name) {
     input.name = name;
     input.value = item;
     label.append(input, document.createTextNode(` ${item}`));
-    container.append(label);
+    choices.append(label);
   }
-  const selectedInput = [...container.querySelectorAll("input")]
+  const selectedInput = [...choices.querySelectorAll("input")]
     .find((input) => input.value === selected);
   (selectedInput || allInput).checked = true;
+  container.append(choices);
 }
 
 function selectRoom(roomName) {
@@ -391,16 +401,18 @@ function renderLessons() {
     lessons.append(row);
   }
   const substitutions = rows.filter((lesson) => lesson.substitution).length;
-  const updateText = new Date(data.metadata.generatedAt).toLocaleString("pl-PL", {
-    dateStyle: "medium",
-    timeStyle: "short",
-  });
-  const lessonCount = kind.value === "class"
-    ? new Set(rows
-      .filter((lesson) => lesson.subject !== "brak")
-      .map((lesson) => `${lesson.dayIndex}:${lesson.period}`)).size
-    : rows.filter((lesson) => lesson.subject !== "brak").length;
-  status.innerHTML = `<span class="status-main">${lessonCount} lekcji</span> · ${substitutions} zastępstw <span class="status-update">• Plan zaktualizowano: ${updateText}</span>`;
+  const lessonCount = new Set(rows
+    .filter((lesson) => lesson.subject !== "brak")
+    .map((lesson) => `${lesson.dayIndex}:${lesson.period}`)).size;
+  weeklyHours.textContent = String(lessonCount);
+  substitutionCount.textContent = String(substitutions);
+  const substitutionsUpdatedAt = data.metadata.substitutionsUpdatedAt;
+  substitutionUpdated.textContent = substitutionsUpdatedAt
+    ? new Date(substitutionsUpdatedAt).toLocaleString("pl-PL", {
+      dateStyle: "short",
+      timeStyle: "short",
+    })
+    : "Brak danych";
   updateCountdowns(rows);
 }
 
@@ -631,6 +643,16 @@ function renderHolidays() {
   }
 }
 
+function renderDuty() {
+  const week = Number(data.metadata?.week);
+  if (!Number.isInteger(week) || week < 1) {
+    throw new Error("Nie udało się ustalić tygodnia dla dyżurnych.");
+  }
+  const firstDutyNumber = week > 17 ? week - 17 : week;
+  dutyNumbers.textContent = `${firstDutyNumber} i ${35 - firstDutyNumber}`;
+  dutyWeek.textContent = `Tydzień ${week} roku szkolnego`;
+}
+
 function isClickableValue(value) {
   const normalized = value.toLocaleLowerCase("pl-PL");
   return !["uczniowie", "świetlica", "swietlica", "przychodzą później", "przychodza pozniej"]
@@ -661,10 +683,15 @@ async function load() {
       }
     }
     applySubstitutions(substitutionRows);
-    data.metadata = { ...data.metadata, ...current.metadata };
+    data.metadata = {
+      ...data.metadata,
+      ...current.metadata,
+      week: current.week ?? data.metadata.week,
+    };
   } else {
     data = current;
   }
+  renderDuty();
   const calendarResponse = await fetch("data/calendar.json", { cache: "no-store" });
   calendar = calendarResponse.ok ? await calendarResponse.json() : fallbackCalendar;
   const favorite = favoritePlan();
@@ -786,14 +813,6 @@ favoriteClassOpen.addEventListener("click", () => {
   updateFavoriteClass();
   renderLessons();
 });
-tableZoomOut.addEventListener("click", () => {
-  setTableZoom(Number(scheduleTable.style.zoom || 1) - tableZoomStep);
-});
-tableZoomReset.addEventListener("click", () => setTableZoom(1));
-tableZoomIn.addEventListener("click", () => {
-  setTableZoom(Number(scheduleTable.style.zoom || 1) + tableZoomStep);
-});
-setTableZoom(Number(localStorage.getItem("schedule-table-zoom")) || 1);
 for (const button of themeButtons) {
   button.addEventListener("click", () => setTheme(button.dataset.themeChoice));
 }

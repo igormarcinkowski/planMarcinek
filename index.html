@@ -31,19 +31,24 @@
         <label>Wybór
           <select id="value"></select>
         </label>
-        <div class="choice-panel religion-panel">
-          <span class="religion-title">Religia</span>
-          <label class="check-choice">
-            <input id="religion" type="checkbox">
-            Chodzę
-          </label>
+        <div class="filter-control religion-control">
+          <span class="filter-control-label">Religia</span>
+          <div class="choice-panel religion-panel">
+            <label class="check-choice">
+              <input id="religion" type="checkbox">
+              Chodzę
+            </label>
+          </div>
         </div>
-        <div class="favorite-class-controls">
-          <button id="favorite-class-button" class="favorite-class-button" type="button"
-            aria-label="Oznacz wybraną klasę jako ulubioną" title="Oznacz jako moją klasę">☆</button>
-          <div id="favorite-class-panel" class="favorite-class-panel" hidden>
-            <span id="favorite-class-name"></span>
-            <button id="favorite-class-open" type="button">Otwórz ulubiony widok</button>
+        <div class="filter-control favorite-class-control">
+          <span class="filter-control-label">Ulubiona klasa</span>
+          <div class="favorite-class-controls">
+            <button id="favorite-class-button" class="favorite-class-button" type="button"
+              aria-label="Oznacz wybraną klasę jako ulubioną" title="Oznacz jako moją klasę">☆</button>
+            <div id="favorite-class-panel" class="favorite-class-panel" hidden>
+              <span id="favorite-class-name"></span>
+              <button id="favorite-class-open" type="button">Otwórz ulubiony widok</button>
+            </div>
           </div>
         </div>
       </div>
@@ -58,17 +63,29 @@
         </fieldset>
       </div>
     </div>
-    <div id="selection-badge" class="selection-badge" aria-live="polite">
-      <span class="selection-badge-kind">Plan</span>
-      <strong>Ładowanie...</strong>
-    </div>
-    <p id="status">Ładowanie planu...</p>
-    <div class="table-tools" aria-label="Sterowanie tabelą planu">
-      <span class="table-tools-hint">Przesuń tabelę w bok albo zmień jej rozmiar</span>
-      <div class="table-zoom-controls">
-        <button id="table-zoom-out" type="button" aria-label="Pomniejsz tabelę">−</button>
-        <button id="table-zoom-reset" type="button" aria-label="Przywróć rozmiar tabeli">100%</button>
-        <button id="table-zoom-in" type="button" aria-label="Powiększ tabelę">+</button>
+    <div class="schedule-overview">
+      <div class="duty-panel" aria-label="Dyżurni w tym tygodniu">
+        <span>Dyżurni</span>
+        <strong id="duty-numbers">--</strong>
+        <small id="duty-week"></small>
+      </div>
+      <div id="selection-badge" class="selection-badge" aria-live="polite">
+        <span class="selection-badge-kind">Plan</span>
+        <strong>Ładowanie...</strong>
+      </div>
+      <div id="status" class="schedule-meta" aria-label="Statystyki planu" aria-live="polite">
+        <span class="schedule-meta-item">
+          <span>Godzin w tygodniu</span>
+          <strong id="weekly-hours">--</strong>
+        </span>
+        <span class="schedule-meta-item">
+          <span>Zastępstwa</span>
+          <strong id="substitution-count">--</strong>
+        </span>
+        <span class="schedule-meta-item">
+          <span>Dodano</span>
+          <strong id="substitution-updated">--</strong>
+        </span>
       </div>
     </div>
     <div class="table-wrap">
@@ -115,6 +132,7 @@
         <ul id="holidays"></ul>
       </div>
     </section>
+    <footer class="site-footer">Autor strony: Igor Marcinkowski, 5H</footer>
   </main>
   <script src="script.js"></script>
 </body>

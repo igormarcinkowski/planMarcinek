@@ -25,6 +25,18 @@ def next_school_day(current: date) -> date:
     return current + timedelta(days=days_ahead)
 
 
+def resolve_target_date(current: date, page_day: int | None) -> date | None:
+    if page_day is None:
+        return None
+
+    next_day = next_school_day(current)
+    if page_day == current.weekday():
+        return current
+    if page_day == next_day.weekday():
+        return next_day
+    return None
+
+
 def base_target_date() -> date | None:
     now = datetime.now(WARSAW)
     current = now.date()
@@ -168,21 +180,21 @@ def main() -> None:
 
     session = requests.Session()
     rows, page_day = read_substitutions(session)
-    if page_day is None:
-        raise RuntimeError("Nie udało się odczytać dnia, którego dotyczą zastępstwa")
-
-    expected_day = current.weekday()
-    next_day = next_school_day(current)
-    if page_day == expected_day:
-        target = current
-    elif page_day == next_day.weekday():
-        target = next_day
-    else:
-        raise RuntimeError(
-            "Strona zastępstw dotyczy nieoczekiwanego dnia: "
-            f"{DAYS[page_day]}, oczekiwano {DAYS[expected_day]} "
-            f"lub {DAYS[next_day.weekday()]}"
+    target = resolve_target_date(current, page_day)
+    if target is None:
+        expected_day = current.weekday()
+        next_day = next_school_day(current)
+        actual_day = (
+            DAYS[page_day]
+            if page_day is not None and 0 <= page_day < len(DAYS)
+            else "nierozpoznany"
         )
+        print(
+            f"Pominięto aktualizację zastępstw: strona dotyczy dnia "
+            f"{actual_day}, oczekiwano {DAYS[expected_day]} lub "
+            f"{DAYS[next_day.weekday()]}. Dane pozostają bez zmian."
+        )
+        return
 
     plan["metadata"]["week"] = school_week(target)
     week_path = root / "data" / f"tydzien_{plan['metadata']['week']}"
