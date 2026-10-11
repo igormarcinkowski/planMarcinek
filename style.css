@@ -380,7 +380,7 @@ h2 { font-size: .95rem; font-weight: 750; letter-spacing: -.015em; }
 
 .filter-row.primary-filters {
   display: grid;
-  grid-template-columns: minmax(150px, .8fr) minmax(180px, 1fr) auto auto;
+  grid-template-columns: minmax(130px, .65fr) minmax(160px, .8fr) auto auto;
   align-items: stretch;
   gap: 10px;
 }
@@ -672,6 +672,10 @@ select:focus-visible {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 400px;
+  max-width: 100%;
+  min-height: 38px;
+  box-sizing: border-box;
   padding: 4px 4px 4px 12px;
   border-radius: var(--radius-pill);
   background: var(--surface-2);
@@ -680,6 +684,13 @@ select:focus-visible {
   font-weight: 650;
   color: var(--text);
   animation: fadeUp .35s var(--ease) both;
+}
+
+.favorite-class-panel span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .favorite-class-panel button {

@@ -156,7 +156,12 @@ function updateFavoriteClass() {
     ? "Usuń ulubiony widok"
     : "Zapisz jako ulubiony widok";
   const favoriteOptions = optionsFor(favorite?.kind || "class");
-  favoriteClassPanel.hidden = !favorite || !favoriteOptions.includes(favorite.value);
+  const hasFavorite = Boolean(favorite && favoriteOptions.includes(favorite.value));
+  favoriteClassPanel.hidden = false;
+  favoriteClassOpen.hidden = false;
+  favoriteClassOpen.disabled = !hasFavorite;
+  favoriteClassOpen.style.visibility = hasFavorite ? "visible" : "hidden";
+  favoriteClassOpen.setAttribute("aria-hidden", String(!hasFavorite));
   const favoriteGroups = favorite
     ? [
       favorite.kind === "class" && favorite.group2,
@@ -169,9 +174,9 @@ function updateFavoriteClass() {
     : "";
   const favoriteLabel = favorite?.kind === "class" ? "Moja klasa"
     : favorite?.kind === "teacher" ? "Mój nauczyciel" : "Moja sala";
-  favoriteClassName.textContent = favorite
+  favoriteClassName.textContent = hasFavorite
     ? `${favoriteLabel}: ${favorite.value}${favoriteGroups ? ` · ${favoriteGroups}` : ""}`
-    : "";
+    : "Nie wybrano ulubionej klasy";
 }
 
 function renderGroupFamily(title, options, selected, name) {
