@@ -171,13 +171,13 @@ def apply_substitutions(plan: dict, rows: list[list[str]], day_index: int) -> in
 
 def main() -> None:
     root = Path(__file__).parent
-    base_path = root / "data" / "base.json"
-    plan = json.loads(base_path.read_text(encoding="utf-8"))
     current = base_target_date()
     if current is None:
-        print("Brak zastępstw przed niedzielnym resetem o 14:00.")
+        print("Pominięto aktualizację zastępstw przed niedzielą 14:00.")
         return
 
+    base_path = root / "data" / "base.json"
+    plan = json.loads(base_path.read_text(encoding="utf-8"))
     session = requests.Session()
     rows, page_day = read_substitutions(session)
     target = resolve_target_date(current, page_day)

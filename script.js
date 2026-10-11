@@ -808,6 +808,9 @@ favoriteClassOpen.addEventListener("click", () => {
   if (!favorite || !optionsFor(favorite.kind).includes(favorite.value)) return;
   kind.value = favorite.kind;
   localStorage.setItem("plan-value", favorite.value);
+  if (favorite.kind === "class") {
+    religion.checked = favorite.religion === true;
+  }
   renderOptions(favorite.value);
   saveSelection();
   updateFavoriteClass();
