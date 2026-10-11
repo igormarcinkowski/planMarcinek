@@ -158,9 +158,8 @@ function updateFavoriteClass() {
   const favoriteOptions = optionsFor(favorite?.kind || "class");
   const hasFavorite = Boolean(favorite && favoriteOptions.includes(favorite.value));
   favoriteClassPanel.hidden = false;
-  favoriteClassOpen.hidden = false;
+  favoriteClassOpen.hidden = !hasFavorite;
   favoriteClassOpen.disabled = !hasFavorite;
-  favoriteClassOpen.style.visibility = hasFavorite ? "visible" : "hidden";
   favoriteClassOpen.setAttribute("aria-hidden", String(!hasFavorite));
   const favoriteGroups = favorite
     ? [
@@ -175,7 +174,9 @@ function updateFavoriteClass() {
   const favoriteLabel = favorite?.kind === "class" ? "Moja klasa"
     : favorite?.kind === "teacher" ? "Mój nauczyciel" : "Moja sala";
   favoriteClassName.textContent = hasFavorite
-    ? `${favoriteLabel}: ${favorite.value}${favoriteGroups ? ` · ${favoriteGroups}` : ""}`
+    ? favorite.kind === "class"
+      ? `${favorite.value}${favoriteGroups ? ` · ${favoriteGroups}` : ""}`
+      : `${favoriteLabel}: ${favorite.value}`
     : "Nie wybrano ulubionej klasy";
 }
 

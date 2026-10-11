@@ -686,14 +686,18 @@ select:focus-visible {
   animation: fadeUp .35s var(--ease) both;
 }
 
-.favorite-class-panel span {
+.favorite-class-panel > span {
+  flex: 1 1 auto;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
+.favorite-class-open-short { display: none; }
+
 .favorite-class-panel button {
+  flex: none;
   padding: 6px 13px;
   border: 0;
   border-radius: var(--radius-pill);
@@ -1427,6 +1431,23 @@ select:focus-visible {
 @media (max-width: 900px) {
   body { padding: 16px 10px 40px; }
 
+  .favorite-class-control {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+  }
+  .favorite-class-controls {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .favorite-class-panel {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    animation: none;
+  }
+
   .theme-switcher {
     position: static;
     margin: 0 auto 12px;
@@ -1502,8 +1523,16 @@ select:focus-visible {
   .favorite-class-panel {
     flex: 1 1 0;
     width: auto;
+    min-width: 0;
     max-width: none;
+    animation: none;
   }
+  .favorite-class-panel button {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .favorite-class-open-full { display: none; }
+  .favorite-class-open-short { display: inline; }
 
   .schedule-overview {
     grid-template-columns: minmax(0, 1fr) auto;
