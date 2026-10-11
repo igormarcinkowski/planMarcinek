@@ -1494,6 +1494,17 @@ select:focus-visible {
   .religion-control,
   .favorite-class-control { grid-column: 1; }
 
+  .favorite-class-control { width: 100%; }
+  .favorite-class-controls {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .favorite-class-panel {
+    flex: 1 1 0;
+    width: auto;
+    max-width: none;
+  }
+
   .schedule-overview {
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 8px;
