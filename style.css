@@ -1437,14 +1437,17 @@ select:focus-visible {
     min-width: 0;
   }
   .favorite-class-controls {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 8px;
     width: 100%;
-    flex-wrap: nowrap;
+    min-width: 0;
   }
   .favorite-class-panel {
-    flex: 1 1 0;
-    width: auto;
+    width: 100%;
     min-width: 0;
-    max-width: none;
+    max-width: 100%;
     animation: none;
   }
 
