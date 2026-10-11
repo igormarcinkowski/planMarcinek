@@ -694,7 +694,7 @@ select:focus-visible {
   white-space: nowrap;
 }
 
-.favorite-class-open-short { display: none; }
+.favorite-class-open::after { content: " ulubiony widok"; }
 
 .favorite-class-panel button {
   flex: none;
@@ -1534,8 +1534,7 @@ select:focus-visible {
     padding-right: 8px;
     padding-left: 8px;
   }
-  .favorite-class-open-full { display: none; }
-  .favorite-class-open-short { display: inline; }
+  .favorite-class-open::after { content: none; }
 
   .schedule-overview {
     grid-template-columns: minmax(0, 1fr) auto;
