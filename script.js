@@ -24,20 +24,39 @@ const tableZoomOut = document.querySelector("#table-zoom-out");
 const tableZoomReset = document.querySelector("#table-zoom-reset");
 const tableZoomIn = document.querySelector("#table-zoom-in");
 const themeButtons = document.querySelectorAll(".theme-button");
+const lessonScheduleButtons = document.querySelectorAll(".lesson-schedule-button");
 let data;
 let calendar;
 const tableZoomMin = 0.7;
 const tableZoomMax = 1.2;
 const tableZoomStep = 0.1;
 const themes = ["light", "dark", "purple", "red", "green"];
-const lessonHours = {
-  0: ["07:05", "07:50"], 1: ["08:00", "08:45"],
-  2: ["08:55", "09:40"], 3: ["09:50", "10:35"],
-  4: ["10:45", "11:30"], 5: ["11:40", "12:25"],
-  6: ["12:45", "13:30"], 7: ["13:40", "14:25"],
-  8: ["14:45", "15:30"], 9: ["15:40", "16:25"],
-  10: ["16:35", "17:20"], 11: ["17:30", "18:15"],
+const lessonSchedules = {
+  regular: {
+    hours: {
+      0: ["07:05", "07:50"], 1: ["08:00", "08:45"],
+      2: ["08:55", "09:40"], 3: ["09:50", "10:35"],
+      4: ["10:45", "11:30"], 5: ["11:40", "12:25"],
+      6: ["12:45", "13:30"], 7: ["13:40", "14:25"],
+      8: ["14:45", "15:30"], 9: ["15:40", "16:25"],
+      10: ["16:35", "17:20"], 11: ["17:30", "18:15"],
+      12: ["18:25", "19:10"],
+    },
+  },
+  short: {
+    hours: {
+      0: ["07:05", "07:35"], 1: ["07:40", "08:10"],
+      2: ["08:15", "08:45"], 3: ["08:50", "09:20"],
+      4: ["09:30", "10:00"], 5: ["10:05", "10:35"],
+      6: ["10:40", "11:10"], 7: ["11:15", "11:45"],
+      8: ["11:50", "12:20"], 9: ["12:30", "13:00"],
+      10: ["13:05", "13:35"], 11: ["13:40", "14:10"],
+      12: ["14:15", "14:45"],
+    },
+  },
 };
+let lessonSchedule = localStorage.getItem("lesson-schedule") === "short" ? "short" : "regular";
+let lessonHours = lessonSchedules[lessonSchedule].hours;
 const fallbackCalendar = {
   holidays: [
     { name: "Dzień Nauczyciela", start: "2026-10-14", end: "2026-10-15", type: "holiday" },
@@ -289,8 +308,14 @@ function renderLessons() {
     ? teacherDisplayName(selected)
     : selected || "Nie wybrano";
   const rows = visibleLessons();
-  const highlightedSlots = highlightedSlotKeys(rows, new Date());
+  const now = new Date();
+  const highlightedSlots = highlightedSlotKeys(rows, now);
   const periods = [...new Set(rows.map((lesson) => lesson.period))].sort((a, b) => a - b);
+  const daysOff = new Map();
+  for (let day = 0; day < 5; day += 1) {
+    const holiday = holidayForDate(dateForWeekday(day, now));
+    if (holiday) daysOff.set(day, holiday);
+  }
   const bySlot = new Map();
   for (const lesson of rows) {
     const key = `${lesson.period}:${lesson.dayIndex}`;
@@ -327,6 +352,33 @@ function renderLessons() {
     timeCell.textContent = hours ? `${hours[0]}–${hours[1]}` : "—";
     row.append(timeCell);
     for (let day = 0; day < 5; day += 1) {
+      const holiday = daysOff.get(day);
+      if (holiday) {
+        if (period === periods[0]) {
+          const dayOffCell = document.createElement("td");
+          dayOffCell.className = "day-off-cell";
+          dayOffCell.rowSpan = periods.length;
+          const dayOffCard = document.createElement("div");
+          dayOffCard.className = "day-off-card";
+          const dayOffIcon = document.createElement("span");
+          dayOffIcon.className = "day-off-icon";
+          dayOffIcon.setAttribute("aria-hidden", "true");
+          dayOffIcon.textContent = "✦";
+          const dayOffLabel = document.createElement("span");
+          dayOffLabel.className = "day-off-label";
+          dayOffLabel.textContent = "Dzień wolny";
+          const dayOffName = document.createElement("strong");
+          dayOffName.className = "day-off-name";
+          dayOffName.textContent = holiday.name;
+          const dayOffDescription = document.createElement("span");
+          dayOffDescription.className = "day-off-description";
+          dayOffDescription.textContent = "Brak zajęć dydaktycznych";
+          dayOffCard.append(dayOffIcon, dayOffLabel, dayOffName, dayOffDescription);
+          dayOffCell.append(dayOffCard);
+          row.append(dayOffCell);
+        }
+        continue;
+      }
       const slot = bySlot.get(`${period}:${day}`) || [];
       const cell = document.createElement("td");
       const slotKey = `${period}:${day}`;
@@ -406,8 +458,9 @@ function renderLessons() {
     }
     lessons.append(row);
   }
-  const substitutions = rows.filter((lesson) => lesson.substitution).length;
-  const lessonCount = new Set(rows
+  const schoolDayRows = rows.filter((lesson) => !daysOff.has(lesson.dayIndex));
+  const substitutions = schoolDayRows.filter((lesson) => lesson.substitution).length;
+  const lessonCount = new Set(schoolDayRows
     .filter((lesson) => lesson.subject !== "brak")
     .map((lesson) => `${lesson.dayIndex}:${lesson.period}`)).size;
   weeklyHours.textContent = String(lessonCount);
@@ -436,20 +489,52 @@ function formatDuration(milliseconds, includeMinutes = false, includeSeconds = f
   return parts.join(" ") || "0m";
 }
 
+function dateForWeekday(dayIndex, now) {
+  const date = new Date(now);
+  date.setHours(0, 0, 0, 0);
+  const weekday = now.getDay() || 7;
+  const distance = (dayIndex + 1 - weekday + 7) % 7;
+  date.setDate(date.getDate() + distance);
+  return date;
+}
+
+function holidayForDate(date) {
+  const dateKey = [
+    date.getFullYear(),
+    String(date.getMonth() + 1).padStart(2, "0"),
+    String(date.getDate()).padStart(2, "0"),
+  ].join("-");
+  return (calendar?.holidays || fallbackCalendar.holidays)
+    .find((holiday) => holiday.start <= dateKey && dateKey < holiday.end);
+}
+
+function lessonOccurrence(lesson, now) {
+  const hours = lessonHours[lesson.period];
+  if (!hours || lesson.subject === "brak" || lesson.cancelled) return null;
+  const start = dateForWeekday(lesson.dayIndex, now);
+  const [startHour, startMinute] = hours[0].split(":").map(Number);
+  const [endHour, endMinute] = hours[1].split(":").map(Number);
+  start.setHours(startHour, startMinute, 0, 0);
+  const end = new Date(start);
+  end.setHours(endHour, endMinute, 0, 0);
+  return { start, end };
+}
+
+function nextLessonOccurrence(lesson, now) {
+  const occurrence = lessonOccurrence(lesson, now);
+  if (!occurrence) return null;
+  while (occurrence.start <= now || holidayForDate(occurrence.start)) {
+    occurrence.start.setDate(occurrence.start.getDate() + 7);
+    occurrence.end.setDate(occurrence.end.getDate() + 7);
+  }
+  return occurrence;
+}
+
 function nextLessonDate(rows, now) {
   let result = null;
   for (const lesson of rows) {
-    if (!lessonHours[lesson.period] || lesson.subject === "brak" || lesson.cancelled) continue;
-    const day = now.getDay() === 0 ? 7 : now.getDay();
-    let distance = lesson.dayIndex + 1 - day;
-    if (distance < 0) distance += 7;
-    const candidate = new Date(now);
-    candidate.setHours(0, 0, 0, 0);
-    candidate.setDate(candidate.getDate() + distance);
-    const [hours, minutes] = lessonHours[lesson.period][0].split(":").map(Number);
-    candidate.setHours(hours, minutes, 0, 0);
-    if (candidate <= now) candidate.setDate(candidate.getDate() + 7);
-    if (!result || candidate < result) result = candidate;
+    const occurrence = nextLessonOccurrence(lesson, now);
+    if (occurrence && (!result || occurrence.start < result)) result = occurrence.start;
   }
   return result;
 }
@@ -591,21 +676,15 @@ function highlightedSlotKeys(rows, now) {
   const current = new Set();
   let next = null;
   for (const lesson of rows) {
-    const hours = lessonHours[lesson.period];
-    if (!hours || lesson.subject === "brak" || lesson.cancelled) continue;
-    const start = new Date(now);
-    start.setHours(0, 0, 0, 0);
-    const distance = (lesson.dayIndex + 1 - (now.getDay() || 7) + 7) % 7;
-    start.setDate(start.getDate() + distance);
-    const [startHour, startMinute] = hours[0].split(":").map(Number);
-    const [endHour, endMinute] = hours[1].split(":").map(Number);
-    start.setHours(startHour, startMinute, 0, 0);
-    const end = new Date(start);
-    end.setHours(endHour, endMinute, 0, 0);
+    const occurrence = lessonOccurrence(lesson, now);
+    if (!occurrence) continue;
     const key = `${lesson.period}:${lesson.dayIndex}`;
-    if (start <= now && now < end) current.add(key);
-    if (start <= now) start.setDate(start.getDate() + 7);
-    if (!next || start < next.time) next = { key, time: start };
+    if (!holidayForDate(occurrence.start)
+      && occurrence.start <= now && now < occurrence.end) current.add(key);
+    const upcoming = nextLessonOccurrence(lesson, now);
+    if (upcoming && (!next || upcoming.start < next.time)) {
+      next = { key, time: upcoming.start };
+    }
   }
   return { current, next: next?.key || null };
 }
@@ -613,21 +692,16 @@ function highlightedSlotKeys(rows, now) {
 function lessonStateFor(rows, now) {
   let next = null;
   for (const lesson of rows) {
-    const hours = lessonHours[lesson.period];
-    if (!hours || lesson.subject === "brak" || lesson.cancelled) continue;
-    const weekday = now.getDay() || 7;
-    let distance = lesson.dayIndex + 1 - weekday;
-    if (distance < 0) distance += 7;
-    const start = new Date(now);
-    start.setHours(0, 0, 0, 0);
-    start.setDate(start.getDate() + distance);
-    const [startHour, startMinute] = hours[0].split(":").map(Number);
-    const [endHour, endMinute] = hours[1].split(":").map(Number);
-    start.setHours(startHour, startMinute, 0, 0);
-    const end = new Date(start);
-    end.setHours(endHour, endMinute, 0, 0);
-    if (start <= now && now < end) return { time: now, end, active: true };
-    if (start > now && (!next || start < next.time)) next = { time: start, end, active: false };
+    const occurrence = lessonOccurrence(lesson, now);
+    if (!occurrence) continue;
+    if (!holidayForDate(occurrence.start)
+      && occurrence.start <= now && now < occurrence.end) {
+      return { time: now, end: occurrence.end, active: true };
+    }
+    const upcoming = nextLessonOccurrence(lesson, now);
+    if (upcoming && (!next || upcoming.start < next.time)) {
+      next = { time: upcoming.start, end: upcoming.end, active: false };
+    }
   }
   return next;
 }
@@ -825,6 +899,22 @@ favoriteClassOpen.addEventListener("click", () => {
 for (const button of themeButtons) {
   button.addEventListener("click", () => setTheme(button.dataset.themeChoice));
 }
+function setLessonSchedule(schedule) {
+  if (!Object.hasOwn(lessonSchedules, schedule)) return;
+  lessonSchedule = schedule;
+  lessonHours = lessonSchedules[schedule].hours;
+  localStorage.setItem("lesson-schedule", schedule);
+  for (const button of lessonScheduleButtons) {
+    const isSelected = button.dataset.lessonSchedule === schedule;
+    button.classList.toggle("is-selected", isSelected);
+    button.setAttribute("aria-pressed", String(isSelected));
+  }
+  if (data) renderLessons();
+}
+for (const button of lessonScheduleButtons) {
+  button.addEventListener("click", () => setLessonSchedule(button.dataset.lessonSchedule));
+}
+setLessonSchedule(lessonSchedule);
 setTheme(localStorage.getItem("page-theme") || "light");
 load().catch((error) => { status.textContent = error.message; });
 setInterval(() => updateCountdowns(visibleLessons()), 1000);
