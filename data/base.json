@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-11T17:07+02:00",
-    "week": 7,
+    "generatedAt": "2026-10-18T15:12+02:00",
+    "week": 8,
     "source": "https://plan.zse.bydgoszcz.pl/lista.html",
     "validity": {
-      "from": "2026-09-21",
-      "to": "2026-09-21"
+      "from": "2026-10-19",
+      "to": "2026-10-19"
     }
   },
   "classes": [
@@ -21,16 +21,16 @@
     "2F",
     "2H",
     "2I",
-    "3A",
     "3D",
-    "3F",
     "3H",
     "4A",
     "4B",
     "4D",
+    "4E",
     "4F",
     "4H",
     "4I",
+    "4J",
     "5A",
     "5B",
     "5D",
@@ -56,6 +56,7 @@
     "D. Czyżewski",
     "D. Gierczak-Pliszka",
     "D. Gozdur-Kolendo",
+    "D. Musierowicz",
     "D. Wojtuń",
     "D. Wróblewska",
     "E. Pieńkosz-Kumor",
@@ -121,7 +122,6 @@
     "T. Lewandowski",
     "T. Lubiewski",
     "T. Poćwiardowski",
-    "V. EduZdr.",
     "W. Hermanowski",
     "W. Korput",
     "W. Sempowicz",
@@ -286,7 +286,6 @@
     "W-6",
     "W-7",
     "WP1",
-    "WP3",
     "pc1",
     "pc2",
     "pc3",
@@ -504,7 +503,7 @@
       "subject": "e_zdrowotna",
       "group": "",
       "wfGroup": "",
-      "teacher": "V. EduZdr.",
+      "teacher": "D. Musierowicz",
       "room": "106",
       "groups": []
     },
@@ -990,7 +989,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "A. Leszczyńska",
-      "room": "302",
+      "room": "301",
       "groups": [
         "2/2"
       ]
@@ -1302,8 +1301,8 @@
       "subject": "e_zdrowotna",
       "group": "",
       "wfGroup": "",
-      "teacher": "V. EduZdr.",
-      "room": "105",
+      "teacher": "D. Musierowicz",
+      "room": "110",
       "groups": []
     },
     {
@@ -2328,7 +2327,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "J. Mrozińska",
-      "room": "pc4",
+      "room": "pc5",
       "groups": [
         "2/2"
       ]
@@ -2429,7 +2428,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "J. Mrozińska",
-      "room": "pc4",
+      "room": "pc5",
       "groups": [
         "2/2"
       ]
@@ -2783,7 +2782,7 @@
       "subject": "e_zdrowotna",
       "group": "",
       "wfGroup": "",
-      "teacher": "V. EduZdr.",
+      "teacher": "D. Musierowicz",
       "room": "311",
       "groups": []
     },
@@ -4085,7 +4084,7 @@
       "subject": "e_zdrowotna",
       "group": "",
       "wfGroup": "",
-      "teacher": "V. EduZdr.",
+      "teacher": "D. Musierowicz",
       "room": "106",
       "groups": []
     },
@@ -4255,7 +4254,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "R. Śmidoda",
-      "room": "pc4",
+      "room": "pc5",
       "groups": [
         "1/2"
       ]
@@ -4339,7 +4338,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "R. Śmidoda",
-      "room": "pc4",
+      "room": "pc5",
       "groups": [
         "1/2"
       ]
@@ -4908,14 +4907,12 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 7,
-      "subject": "j.angielski",
-      "group": "1/2",
+      "subject": "bizn.i zarz.",
+      "group": "",
       "wfGroup": "",
-      "teacher": "A. Leszczyńska",
-      "room": "301",
-      "groups": [
-        "1/2"
-      ]
+      "teacher": "A. Mordaka-Markiewicz",
+      "room": "109",
+      "groups": []
     },
     {
       "class": "1H",
@@ -4975,12 +4972,14 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 8,
-      "subject": "bizn.i zarz.",
-      "group": "",
+      "subject": "j.angielski",
+      "group": "1/2",
       "wfGroup": "",
-      "teacher": "A. Mordaka-Markiewicz",
-      "room": "214",
-      "groups": []
+      "teacher": "A. Leszczyńska",
+      "room": "301",
+      "groups": [
+        "1/2"
+      ]
     },
     {
       "class": "1H",
@@ -4988,84 +4987,19 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 8,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "1H",
-      "classLabel": "1H 1H Atos",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 8,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "1H",
-      "classLabel": "1H 1H Atos",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 8,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "1H",
-      "classLabel": "1H 1H Atos",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 9,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "1H",
-      "classLabel": "1H 1H Atos",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 9,
       "subject": "e_zdrowotna",
       "group": "",
       "wfGroup": "",
-      "teacher": "V. EduZdr.",
+      "teacher": "D. Musierowicz",
       "room": "105",
       "groups": []
     },
     {
       "class": "1H",
       "classLabel": "1H 1H Atos",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 9,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "1H",
-      "classLabel": "1H 1H Atos",
       "day": "Czwartek",
       "dayIndex": 3,
-      "period": 9,
+      "period": 8,
       "subject": "brak",
       "group": "",
       "wfGroup": "",
@@ -5078,7 +5012,7 @@
       "classLabel": "1H 1H Atos",
       "day": "Piątek",
       "dayIndex": 4,
-      "period": 9,
+      "period": 8,
       "subject": "brak",
       "group": "",
       "wfGroup": "",
@@ -5251,7 +5185,7 @@
       "subject": "e_zdrowotna",
       "group": "",
       "wfGroup": "",
-      "teacher": "V. EduZdr.",
+      "teacher": "D. Musierowicz",
       "room": "108",
       "groups": []
     },
@@ -7790,11 +7724,11 @@
       "day": "Poniedziałek",
       "dayIndex": 0,
       "period": 0,
-      "subject": "bizn.i zarz.",
+      "subject": "zaj.z wych.",
       "group": "",
       "wfGroup": "",
       "teacher": "A. Mordaka-Markiewicz",
-      "room": "217",
+      "room": "105",
       "groups": []
     },
     {
@@ -7872,11 +7806,11 @@
       "day": "Poniedziałek",
       "dayIndex": 0,
       "period": 1,
-      "subject": "zaj.z wych.",
+      "subject": "bizn.i zarz.",
       "group": "",
       "wfGroup": "",
       "teacher": "A. Mordaka-Markiewicz",
-      "room": "217",
+      "room": "105",
       "groups": []
     },
     {
@@ -8516,11 +8450,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 8,
-      "subject": "r_matematyka",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "E. Łabuńska",
-      "room": "110",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -8529,11 +8463,11 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 8,
-      "subject": "fizyka",
+      "subject": "r_matematyka",
       "group": "",
       "wfGroup": "",
-      "teacher": "J. Siepniewska-Stańczyk",
-      "room": "211",
+      "teacher": "E. Łabuńska",
+      "room": "110",
       "groups": []
     },
     {
@@ -8600,7 +8534,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "A. Kowalczewski",
-      "room": "318",
+      "room": "pc5",
       "groups": [
         "1/2"
       ]
@@ -8626,11 +8560,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 9,
-      "subject": "brak",
+      "subject": "fizyka",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "J. Siepniewska-Stańczyk",
+      "room": "211",
       "groups": []
     },
     {
@@ -8684,7 +8618,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "A. Kowalczewski",
-      "room": "318",
+      "room": "pc5",
       "groups": [
         "1/2"
       ]
@@ -8766,7 +8700,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "A. Kowalczewski",
-      "room": "318",
+      "room": "pc5",
       "groups": [
         "2/2"
       ]
@@ -8833,7 +8767,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "A. Kowalczewski",
-      "room": "318",
+      "room": "pc5",
       "groups": [
         "2/2"
       ]
@@ -8887,7 +8821,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "P. Kobus",
-      "room": "pc5",
+      "room": "pc4",
       "groups": [
         "1/2"
       ]
@@ -8956,7 +8890,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "P. Kobus",
-      "room": "pc5",
+      "room": "pc4",
       "groups": [
         "1/2"
       ]
@@ -9624,7 +9558,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "D. Czyżewski",
-      "room": "105",
+      "room": "312",
       "groups": []
     },
     {
@@ -9905,7 +9839,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Tomczak",
-      "room": "106",
+      "room": "107",
       "groups": []
     },
     {
@@ -10017,7 +9951,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "A. Wrzesień",
-      "room": "pc3",
+      "room": "pc1",
       "groups": [
         "2/2"
       ]
@@ -10148,7 +10082,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "A. Wrzesień",
-      "room": "pc3",
+      "room": "pc1",
       "groups": [
         "2/2"
       ]
@@ -10374,7 +10308,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Cierzniakowska",
-      "room": "218",
+      "room": "202",
       "groups": []
     },
     {
@@ -10456,7 +10390,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Cierzniakowska",
-      "room": "218",
+      "room": "214",
       "groups": []
     },
     {
@@ -10573,21 +10507,6 @@
       "day": "Poniedziałek",
       "dayIndex": 0,
       "period": 0,
-      "subject": "M.i K.L.S.K.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "2I",
-      "classLabel": "2I",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 0,
       "subject": "D i NUTK",
       "group": "2/2",
       "wfGroup": "",
@@ -10666,21 +10585,6 @@
       "room": "104",
       "groups": [
         "2/2"
-      ]
-    },
-    {
-      "class": "2I",
-      "classLabel": "2I",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 1,
-      "subject": "M.i K.L.S.K.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "1/2"
       ]
     },
     {
@@ -10943,7 +10847,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Zelek",
-      "room": "214",
+      "room": "107",
       "groups": []
     },
     {
@@ -11172,6 +11076,21 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 6,
+      "subject": "M.i K.L.S.K.",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "T. Ciżmowski",
+      "room": "318",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "2I",
+      "classLabel": "2I",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 6,
       "subject": "j.angielski",
       "group": "2/2",
       "wfGroup": "",
@@ -11241,12 +11160,14 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 7,
-      "subject": "brak",
-      "group": "",
+      "subject": "M.i K.L.S.K.",
+      "group": "1/2",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
+      "teacher": "T. Ciżmowski",
+      "room": "318",
+      "groups": [
+        "1/2"
+      ]
     },
     {
       "class": "2I",
@@ -11422,919 +11343,6 @@
       "groups": []
     },
     {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 0,
-      "subject": "Zaj.Prakt_1",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "W-2",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 0,
-      "subject": "Zaj.Prakt_1",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "S. Wilczyński",
-      "room": "W-6",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 0,
-      "subject": "j.angielski",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "A. Szlachciak",
-      "room": "6",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 0,
-      "subject": "j.niemiecki",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "M. Chełmińska",
-      "room": "205",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 0,
-      "subject": "Prac.urząd.",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "315",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 0,
-      "subject": "religia-1/1",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "T. Poćwiardowski",
-      "room": "202",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 0,
-      "subject": "e_obywatel.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "A. Nowak",
-      "room": "106",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 1,
-      "subject": "Zaj.Prakt_1",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "W-2",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 1,
-      "subject": "Zaj.Prakt_1",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "S. Wilczyński",
-      "room": "W-6",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 1,
-      "subject": "j.niemiecki",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "M. Chełmińska",
-      "room": "205",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 1,
-      "subject": "j.angielski",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "R. Rajkowska",
-      "room": "302",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 1,
-      "subject": "Prac.urząd.",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "315",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 1,
-      "subject": "chemia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Rybacka",
-      "room": "306",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 1,
-      "subject": "r_fizyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "J. Siepniewska-Stańczyk",
-      "room": "211",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 2,
-      "subject": "Zaj.Prakt_1",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "W-2",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 2,
-      "subject": "Zaj.Prakt_1",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "S. Wilczyński",
-      "room": "W-6",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 2,
-      "subject": "zaj.z wych.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Chełmińska",
-      "room": "110",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 2,
-      "subject": "Prac.urząd.",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "315",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 2,
-      "subject": "geografia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 2,
-      "subject": "urzadz.elekt",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "J. Czerniak",
-      "room": "311",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 3,
-      "subject": "Zaj.Prakt_1",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "W-2",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 3,
-      "subject": "Zaj.Prakt_1",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "S. Wilczyński",
-      "room": "W-6",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 3,
-      "subject": "r_matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "312",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 3,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "1/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala2",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 3,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "2/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala5",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 3,
-      "subject": "historia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "K. Grabska",
-      "room": "107",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 3,
-      "subject": "urzadz.elekt",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "J. Czerniak",
-      "room": "311",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 4,
-      "subject": "Zaj.Prakt_1",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "W-2",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 4,
-      "subject": "Zaj.Prakt_1",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "S. Wilczyński",
-      "room": "W-6",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 4,
-      "subject": "e_zdrowotna",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Rybacka",
-      "room": "306",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 4,
-      "subject": "j.niemiecki",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "M. Chełmińska",
-      "room": "205",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 4,
-      "subject": "j.angielski",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "R. Rajkowska",
-      "room": "302",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 4,
-      "subject": "matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "105",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 4,
-      "subject": "matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "105",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 5,
-      "subject": "Zaj.Prakt_1",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "Z. Jakubiak",
-      "room": "W-6",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 5,
-      "subject": "j.polski",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "H. Kulczewska",
-      "room": "109",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 5,
-      "subject": "j.angielski",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "A. Szlachciak",
-      "room": "6",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 5,
-      "subject": "j.niemiecki",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "M. Chełmińska",
-      "room": "205",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 5,
-      "subject": "Prac.urząd.",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "315",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 5,
-      "subject": "Prac.urząd.",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "P. Leda",
-      "room": "3I5",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 5,
-      "subject": "matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "105",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 6,
-      "subject": "Zaj.Prakt_1",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "Z. Jakubiak",
-      "room": "W-6",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 6,
-      "subject": "r_fizyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "J. Siepniewska-Stańczyk",
-      "room": "211",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 6,
-      "subject": "geografia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 6,
-      "subject": "Prac.urząd.",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "315",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 6,
-      "subject": "Prac.urząd.",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "P. Leda",
-      "room": "3I5",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 6,
-      "subject": "ukł.c i a.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "W. Sempowicz",
-      "room": "308",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 7,
-      "subject": "Zaj.Prakt_1",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "Z. Jakubiak",
-      "room": "W-6",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 7,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "1/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala1",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 7,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "2/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala2",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 7,
-      "subject": "chemia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Rybacka",
-      "room": "306",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 7,
-      "subject": "Prac.urząd.",
-      "group": "2/3",
-      "wfGroup": "",
-      "teacher": "J. Truszkowski",
-      "room": "315",
-      "groups": [
-        "2/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 7,
-      "subject": "Prac.urząd.",
-      "group": "3/3",
-      "wfGroup": "",
-      "teacher": "P. Leda",
-      "room": "3I5",
-      "groups": [
-        "3/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 7,
-      "subject": "ukł.c i a.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "W. Sempowicz",
-      "room": "308",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 8,
-      "subject": "Zaj.Prakt_1",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "Z. Jakubiak",
-      "room": "W-6",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 8,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "1/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala1",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 8,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "2/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala2",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 8,
-      "subject": "j.polski",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "H. Kulczewska",
-      "room": "109",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 8,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 8,
-      "subject": "informatyka",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "t. Vacat tech",
-      "room": "221",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 9,
-      "subject": "Zaj.Prakt_1",
-      "group": "1/3",
-      "wfGroup": "",
-      "teacher": "Z. Jakubiak",
-      "room": "W-6",
-      "groups": [
-        "1/3"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 9,
-      "subject": "informatyka",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "t. Vacat tech",
-      "room": "221",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 9,
-      "subject": "j.polski",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "H. Kulczewska",
-      "room": "109",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 9,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "3A",
-      "classLabel": "3A 3A Ivy",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 9,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
       "class": "3D",
       "classLabel": "3D 3D PBŚ",
       "day": "Poniedziałek",
@@ -12344,7 +11352,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "A. Sieracki",
-      "room": "pc5",
+      "room": "pc4",
       "groups": [
         "2/2"
       ]
@@ -12398,7 +11406,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "A. Sieracki",
-      "room": "pc5",
+      "room": "pc4",
       "groups": [
         "1/2"
       ]
@@ -12443,7 +11451,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "A. Sieracki",
-      "room": "pc5",
+      "room": "pc4",
       "groups": [
         "2/2"
       ]
@@ -12497,7 +11505,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "A. Sieracki",
-      "room": "pc5",
+      "room": "pc4",
       "groups": [
         "1/2"
       ]
@@ -12742,7 +11750,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "K. Łabuńska",
-      "room": "311",
+      "room": "214",
       "groups": []
     },
     {
@@ -13198,881 +12206,6 @@
       "groups": []
     },
     {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 0,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "1/2",
-      "teacher": "M. Tomczak",
-      "room": "Hala1",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 0,
-      "subject": "Pr.Ap.In.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "J. Mrozińska",
-      "room": "pc3",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 0,
-      "subject": "M.i K.L.S.K.",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 0,
-      "subject": "sys.baz.dan.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "R. Korytek",
-      "room": "214",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 0,
-      "subject": "religia-1/1",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "T. Poćwiardowski",
-      "room": "202",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 0,
-      "subject": "j.angielski",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "W. Korput",
-      "room": "301",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 1,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "1/2",
-      "teacher": "M. Tomczak",
-      "room": "Hala1",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 1,
-      "subject": "Pr.Ap.In.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "J. Mrozińska",
-      "room": "pc3",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 1,
-      "subject": "M.i K.L.S.K.",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 1,
-      "subject": "sys.baz.dan.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "R. Korytek",
-      "room": "214",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 1,
-      "subject": "matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "105",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 1,
-      "subject": "j.angielski",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "W. Korput",
-      "room": "301",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 2,
-      "subject": "M.i K.L.S.K.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 2,
-      "subject": "Pr.Ap.In.",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "J. Mrozińska",
-      "room": "pc4",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 2,
-      "subject": "Pr.Ap.In.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "J. Mrozińska",
-      "room": "pc3",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 2,
-      "subject": "M.i K.L.S.K.",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 2,
-      "subject": "zaj.z wych.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Tomczak",
-      "room": "106",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 2,
-      "subject": "r_matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "105",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 2,
-      "subject": "fizyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "K. Kołodziejski",
-      "room": "306",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 3,
-      "subject": "M.i K.L.S.K.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 3,
-      "subject": "Pr.Ap.In.",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "J. Mrozińska",
-      "room": "pc4",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 3,
-      "subject": "geografia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 3,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "1/2",
-      "teacher": "M. Tomczak",
-      "room": "Hala4",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 3,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "2/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala5",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 3,
-      "subject": "fizyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "K. Kołodziejski",
-      "room": "211",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 3,
-      "subject": "j.polski",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "D. Wojtuń",
-      "room": "108",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 4,
-      "subject": "M.i K.L.S.K.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "T. Ciżmowski",
-      "room": "318",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 4,
-      "subject": "Pr.Ap.In.",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "J. Mrozińska",
-      "room": "pc4",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 4,
-      "subject": "matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "312",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 4,
-      "subject": "zaj.woj.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Tomczak",
-      "room": "WP3",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 4,
-      "subject": "wit.i ap.int",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "R. Śmidoda",
-      "room": "214",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 4,
-      "subject": "ASO",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "A. Sieracki",
-      "room": "pc5",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 4,
-      "subject": "j.angielski",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "A. Szlachciak",
-      "room": "6",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 5,
-      "subject": "r_informat.",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "A. Wrzesień",
-      "room": "221",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 5,
-      "subject": "j.niemiecki",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "K. Wójcik-Wasilewska",
-      "room": "6",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 5,
-      "subject": "matematyka",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "312",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 5,
-      "subject": "zaj.woj.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Tomczak",
-      "room": "WP3",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 5,
-      "subject": "e_obywatel.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Zelek",
-      "room": "107",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 5,
-      "subject": "ASO",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "A. Sieracki",
-      "room": "pc5",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 5,
-      "subject": "j.angielski",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "A. Szlachciak",
-      "room": "6",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 6,
-      "subject": "informatyka",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "A. Wrzesień",
-      "room": "221",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 6,
-      "subject": "j.niemiecki",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "K. Wójcik-Wasilewska",
-      "room": "6",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 6,
-      "subject": "j.polski",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "D. Wojtuń",
-      "room": "312",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 6,
-      "subject": "zaj.woj.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Tomczak",
-      "room": "WP3",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 6,
-      "subject": "geografia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 6,
-      "subject": "t.p.",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "J. Mrozińska",
-      "room": "217",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 7,
-      "subject": "historia",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "A. Nowak",
-      "room": "106",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 7,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "2/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala2",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 7,
-      "subject": "To  WP1 zaj wojskowe",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 7,
-      "subject": "e_zdrowotna",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "M. Rybacka",
-      "room": "306",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 7,
-      "subject": "j.niemiecki",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "I. Kowalska",
-      "room": "104",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 7,
-      "subject": "ASO",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "A. Sieracki",
-      "room": "pc5",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 8,
-      "subject": "j.polski",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "D. Wojtuń",
-      "room": "108",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 8,
-      "subject": "wf",
-      "group": "",
-      "wfGroup": "2/2",
-      "teacher": "Ł. Dolski",
-      "room": "Hala2",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 8,
-      "subject": "To  WP1 zaj wojskowe",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 8,
-      "subject": "j.niemiecki",
-      "group": "1/2",
-      "wfGroup": "",
-      "teacher": "I. Kowalska",
-      "room": "104",
-      "groups": [
-        "1/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 8,
-      "subject": "r_informat.",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "A. Wrzesień",
-      "room": "pc3",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 8,
-      "subject": "ASO",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "A. Sieracki",
-      "room": "pc5",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Poniedziałek",
-      "dayIndex": 0,
-      "period": 9,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Wtorek",
-      "dayIndex": 1,
-      "period": 9,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Środa",
-      "dayIndex": 2,
-      "period": 9,
-      "subject": "To  WP1 zaj wojskowe",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Czwartek",
-      "dayIndex": 3,
-      "period": 9,
-      "subject": "informatyka",
-      "group": "2/2",
-      "wfGroup": "",
-      "teacher": "A. Wrzesień",
-      "room": "pc3",
-      "groups": [
-        "2/2"
-      ]
-    },
-    {
-      "class": "3F",
-      "classLabel": "3F 3F Woj",
-      "day": "Piątek",
-      "dayIndex": 4,
-      "period": 9,
-      "subject": "brak",
-      "group": "",
-      "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
-      "groups": []
-    },
-    {
       "class": "3H",
       "classLabel": "3H 3H Atos",
       "day": "Poniedziałek",
@@ -14429,7 +12562,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Tomczak",
-      "room": "106",
+      "room": "5",
       "groups": []
     },
     {
@@ -14785,7 +12918,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Cierzniakowska",
-      "room": "218",
+      "room": "214",
       "groups": []
     },
     {
@@ -15175,11 +13308,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 0,
-      "subject": "j.polski",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "P. Kulpa",
-      "room": "215",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -15272,11 +13405,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 1,
-      "subject": "j.polski",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "P. Kulpa",
-      "room": "215",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -15311,11 +13444,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 2,
-      "subject": "geografia",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -15530,7 +13663,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "J. Czerniak",
-      "room": "309",
+      "room": "311",
       "groups": []
     },
     {
@@ -15720,11 +13853,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 5,
-      "subject": "urzadz.elekt",
+      "subject": "historia",
       "group": "",
       "wfGroup": "",
-      "teacher": "J. Czerniak",
-      "room": "311",
+      "teacher": "M. Zelek",
+      "room": "105",
       "groups": []
     },
     {
@@ -15759,11 +13892,11 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 6,
-      "subject": "historia",
+      "subject": "urzadz.elekt",
       "group": "",
       "wfGroup": "",
-      "teacher": "M. Zelek",
-      "room": "107",
+      "teacher": "J. Czerniak",
+      "room": "309",
       "groups": []
     },
     {
@@ -15910,11 +14043,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 8,
-      "subject": "brak",
+      "subject": "geografia",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -15936,11 +14069,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 8,
-      "subject": "brak",
+      "subject": "j.polski",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "P. Kulpa",
+      "room": "215",
       "groups": []
     },
     {
@@ -16001,11 +14134,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 9,
-      "subject": "brak",
+      "subject": "j.polski",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "P. Kulpa",
+      "room": "215",
       "groups": []
     },
     {
@@ -17847,6 +15980,804 @@
       "groups": []
     },
     {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 0,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 0,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "1/2",
+      "teacher": "D. Czyżewski",
+      "room": "Hala3",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 0,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 0,
+      "subject": "K i MST",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "J. Czerniak",
+      "room": "1 TELE",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 0,
+      "subject": "j.angielski",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "E. Pieńkosz-Kumor",
+      "room": "226",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 0,
+      "subject": "A RSK",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 1,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 1,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "1/2",
+      "teacher": "D. Czyżewski",
+      "room": "Hala3",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 1,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 1,
+      "subject": "K i MST",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "J. Czerniak",
+      "room": "1 TELE",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 1,
+      "subject": "j.angielski",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "E. Pieńkosz-Kumor",
+      "room": "226",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 1,
+      "subject": "A RSK",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 2,
+      "subject": "religia-1/1",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "T. Poćwiardowski",
+      "room": "202",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 2,
+      "subject": "s.t.d.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "M. Baranowska",
+      "room": "309",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 2,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "2/2",
+      "teacher": "Ł. Dolski",
+      "room": "Hala1",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 2,
+      "subject": "K i MST",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "J. Czerniak",
+      "room": "1 TELE",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 2,
+      "subject": "j.niemiecki",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "M. Chełmińska",
+      "room": "205",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 2,
+      "subject": "A RSK",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 3,
+      "subject": "matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "I. Dziemitko",
+      "room": "214",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 3,
+      "subject": "s.t.d.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "M. Baranowska",
+      "room": "309",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 3,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "2/2",
+      "teacher": "Ł. Dolski",
+      "room": "Hala1",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 3,
+      "subject": "K i MST",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "J. Czerniak",
+      "room": "1 TELE",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 3,
+      "subject": "geografia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 4,
+      "subject": "matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "I. Dziemitko",
+      "room": "105",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 4,
+      "subject": "geografia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 4,
+      "subject": "s.k.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "217",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 4,
+      "subject": "z_angielski",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "W. Korput",
+      "room": "309",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 4,
+      "subject": "chemia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "M. Rybacka",
+      "room": "306",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 5,
+      "subject": "A RSK",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 5,
+      "subject": "j.niemiecki",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "M. Chełmińska",
+      "room": "205",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 5,
+      "subject": "r_fizyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "J. Siepniewska-Stańczyk",
+      "room": "211",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 5,
+      "subject": "K i MST",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 5,
+      "subject": "s.t.d.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "M. Baranowska",
+      "room": "309",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 5,
+      "subject": "historia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "A. Nowak",
+      "room": "106",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 6,
+      "subject": "A RSK",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 6,
+      "subject": "j.angielski",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "R. Rajkowska",
+      "room": "302",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 6,
+      "subject": "matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "I. Dziemitko",
+      "room": "105",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 6,
+      "subject": "K i MST",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 6,
+      "subject": "chemia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "M. Rybacka",
+      "room": "306",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 6,
+      "subject": "zaj.z wych.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "I. Dziemitko",
+      "room": "105",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 7,
+      "subject": "A RSK",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 7,
+      "subject": "j.angielski",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "R. Rajkowska",
+      "room": "302",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 7,
+      "subject": "r_matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "I. Dziemitko",
+      "room": "105",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 7,
+      "subject": "K i MST",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 7,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "1/2",
+      "teacher": "D. Czyżewski",
+      "room": "Hala4",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 7,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "2/2",
+      "teacher": "Ł. Dolski",
+      "room": "Hala5",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 7,
+      "subject": "j.polski",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "D. Gierczak-Pliszka",
+      "room": "109",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 8,
+      "subject": "s.t.d.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "M. Baranowska",
+      "room": "309",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 8,
+      "subject": "j.polski",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "D. Gierczak-Pliszka",
+      "room": "108",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 8,
+      "subject": "K i MST",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "G. Kantowicz",
+      "room": "1 TELE",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 8,
+      "subject": "j.angielski",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "E. Pieńkosz-Kumor",
+      "room": "226",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 8,
+      "subject": "j.angielski",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "R. Rajkowska",
+      "room": "302",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 8,
+      "subject": "j.polski",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "D. Gierczak-Pliszka",
+      "room": "109",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 9,
+      "subject": "r_fizyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "J. Siepniewska-Stańczyk",
+      "room": "217",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4E",
+      "classLabel": "4E",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
       "class": "4F",
       "classLabel": "4F 4F Woj",
       "day": "Poniedziałek",
@@ -17947,7 +16878,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "R. Rajkowska",
-      "room": "203",
+      "room": "302",
       "groups": [
         "2/2"
       ]
@@ -18016,7 +16947,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "K. Smoleń",
-      "room": "107",
+      "room": "106",
       "groups": []
     },
     {
@@ -18460,7 +17391,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Bzdawka",
-      "room": "220",
+      "room": "217",
       "groups": []
     },
     {
@@ -18559,7 +17490,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Bzdawka",
-      "room": "220",
+      "room": "217",
       "groups": []
     },
     {
@@ -19323,7 +18254,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "A. Wrzesień",
-      "room": "318",
+      "room": "pc1",
       "groups": [
         "1/2"
       ]
@@ -20053,7 +18984,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "D. Wojtuń",
-      "room": "5",
+      "room": "106",
       "groups": []
     },
     {
@@ -20419,11 +19350,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 7,
-      "subject": "matematyka",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Sumicka",
-      "room": "111",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -20488,11 +19419,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 8,
-      "subject": "brak",
+      "subject": "matematyka",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Sumicka",
+      "room": "105",
       "groups": []
     },
     {
@@ -20656,6 +19587,873 @@
       "groups": []
     },
     {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 0,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 0,
+      "subject": "Pr.Ap.In.",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 0,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 0,
+      "subject": "Pr.Ap.In.",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 0,
+      "subject": "ABD",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "J. Mrozińska",
+      "room": "pc1",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 0,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 1,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 1,
+      "subject": "Pr.Ap.In.",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 1,
+      "subject": "fizyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "K. Kołodziejski",
+      "room": "213",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 1,
+      "subject": "Pr.Ap.In.",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 1,
+      "subject": "ABD",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "J. Mrozińska",
+      "room": "pc1",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 1,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 2,
+      "subject": "religia-1/1",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "T. Poćwiardowski",
+      "room": "202",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 2,
+      "subject": "Pr.Ap.In.",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 2,
+      "subject": "j.angielski",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "A. Szlachciak",
+      "room": "6",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 2,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "1/2",
+      "teacher": "M. Wojtecka-Ratajczak",
+      "room": "Hala3",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 2,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "2/2",
+      "teacher": "Ł. Dolski",
+      "room": "Hala1",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 2,
+      "subject": "ABD",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "J. Mrozińska",
+      "room": "pc1",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 2,
+      "subject": "Pr.Ap.In.",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 2,
+      "subject": "zaj.z wych.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "A. Szlachciak",
+      "room": "5",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 3,
+      "subject": "matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "E. Łabuńska",
+      "room": "110",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 3,
+      "subject": "Pr.Ap.In.",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 3,
+      "subject": "j.angielski",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "A. Szlachciak",
+      "room": "6",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 3,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "1/2",
+      "teacher": "M. Wojtecka-Ratajczak",
+      "room": "Hala3",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 3,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "2/2",
+      "teacher": "Ł. Dolski",
+      "room": "Hala1",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 3,
+      "subject": "ABD",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "J. Mrozińska",
+      "room": "221",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 3,
+      "subject": "Pr.Ap.In.",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "S. Sidor",
+      "room": "pc2",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 3,
+      "subject": "wit.i ap.int",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "R. Śmidoda",
+      "room": "218",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 4,
+      "subject": "matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "E. Łabuńska",
+      "room": "110",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 4,
+      "subject": "historia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "M. Zelek",
+      "room": "107",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 4,
+      "subject": "j.niemiecki",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "T. Janka",
+      "room": "303",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 4,
+      "subject": "j.angielski",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "A. Szlachciak",
+      "room": "6",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 4,
+      "subject": "sys.baz.dan.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "R. Korytek",
+      "room": "214",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 4,
+      "subject": "sys.baz.dan.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "R. Korytek",
+      "room": "218",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 5,
+      "subject": "geografia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 5,
+      "subject": "t.p.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "R. Korytek",
+      "room": "218",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 5,
+      "subject": "geografia",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 5,
+      "subject": "j.polski",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "P. Kulpa",
+      "room": "215",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 5,
+      "subject": "matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "E. Łabuńska",
+      "room": "110",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 6,
+      "subject": "fizyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "K. Kołodziejski",
+      "room": "211",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 6,
+      "subject": "t.p.",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "R. Korytek",
+      "room": "218",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 6,
+      "subject": "j.polski",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "P. Kulpa",
+      "room": "215",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 6,
+      "subject": "j.polski",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "P. Kulpa",
+      "room": "215",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 6,
+      "subject": "j.angielski",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "A. Szlachciak",
+      "room": "6",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 6,
+      "subject": "j.niemiecki",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "I. Kowalska",
+      "room": "104",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 7,
+      "subject": "wit.i ap.int",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "R. Śmidoda",
+      "room": "214",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 7,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 7,
+      "subject": "r_matematyka",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "E. Łabuńska",
+      "room": "110",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 7,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "1/2",
+      "teacher": "M. Wojtecka-Ratajczak",
+      "room": "Hala3",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 7,
+      "subject": "wf",
+      "group": "",
+      "wfGroup": "2/2",
+      "teacher": "Ł. Dolski",
+      "room": "Hala5",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 7,
+      "subject": "r_informat.",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "A. Wrzesień",
+      "room": "pc2",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 8,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 8,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 8,
+      "subject": "j.angielski",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "A. Szlachciak",
+      "room": "6",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 8,
+      "subject": "r_informat.",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "A. Wrzesień",
+      "room": "221",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 8,
+      "subject": "wit.i ap.int",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "R. Śmidoda",
+      "room": "217",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 8,
+      "subject": "r_informat.",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "A. Wrzesień",
+      "room": "pc2",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Poniedziałek",
+      "dayIndex": 0,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Wtorek",
+      "dayIndex": 1,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 9,
+      "subject": "j.angielski",
+      "group": "1/2",
+      "wfGroup": "",
+      "teacher": "A. Szlachciak",
+      "room": "6",
+      "groups": [
+        "1/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Środa",
+      "dayIndex": 2,
+      "period": 9,
+      "subject": "r_informat.",
+      "group": "2/2",
+      "wfGroup": "",
+      "teacher": "A. Wrzesień",
+      "room": "221",
+      "groups": [
+        "2/2"
+      ]
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Czwartek",
+      "dayIndex": 3,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
+      "class": "4J",
+      "classLabel": "4J",
+      "day": "Piątek",
+      "dayIndex": 4,
+      "period": 9,
+      "subject": "brak",
+      "group": "",
+      "wfGroup": "",
+      "teacher": "brak",
+      "room": "brak",
+      "groups": []
+    },
+    {
       "class": "5A",
       "classLabel": "5A 5A Ivy",
       "day": "Poniedziałek",
@@ -20674,11 +20472,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 0,
-      "subject": "dor.zaw.",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -20739,11 +20537,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 1,
-      "subject": "dor.zaw.",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -20817,7 +20615,7 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 2,
-      "subject": "j.polski",
+      "subject": "zaj.z wych.",
       "group": "",
       "wfGroup": "",
       "teacher": "P. Kulpa",
@@ -21003,7 +20801,7 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 4,
-      "subject": "zaj.z wych.",
+      "subject": "j.polski",
       "group": "",
       "wfGroup": "",
       "teacher": "P. Kulpa",
@@ -21479,7 +21277,7 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 0,
-      "subject": "brak",
+      "subject": "5B,5D 105 zaj uni",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -21496,7 +21294,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "K. Gałek-Stachura",
-      "room": "204",
+      "room": "203",
       "groups": [
         "2/2"
       ]
@@ -21550,11 +21348,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 1,
-      "subject": "matematyka",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "105",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -21563,7 +21361,7 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 1,
-      "subject": "brak",
+      "subject": "5B,5D 105 zaj uni",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -21580,7 +21378,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "K. Gałek-Stachura",
-      "room": "204",
+      "room": "203",
       "groups": [
         "2/2"
       ]
@@ -21634,11 +21432,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 2,
-      "subject": "matematyka",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "I. Dziemitko",
-      "room": "105",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -21731,7 +21529,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "J. Siepniewska-Stańczyk",
-      "room": "218",
+      "room": "105",
       "groups": []
     },
     {
@@ -21740,7 +21538,7 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 3,
-      "subject": "r_matematyka",
+      "subject": "matematyka",
       "group": "",
       "wfGroup": "",
       "teacher": "I. Dziemitko",
@@ -22066,7 +21864,7 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 7,
-      "subject": "5B,5D zaj uni",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -22092,11 +21890,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 8,
-      "subject": "brak",
+      "subject": "matematyka",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "I. Dziemitko",
+      "room": "105",
       "groups": []
     },
     {
@@ -22131,7 +21929,7 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 8,
-      "subject": "5B,5D zaj uni",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -22157,11 +21955,11 @@
       "day": "Wtorek",
       "dayIndex": 1,
       "period": 9,
-      "subject": "brak",
+      "subject": "r_matematyka",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "I. Dziemitko",
+      "room": "105",
       "groups": []
     },
     {
@@ -22239,7 +22037,7 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 0,
-      "subject": "brak",
+      "subject": "5B,5D 105 zaj uni",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -22252,11 +22050,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 0,
-      "subject": "dor.zaw.",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -22319,7 +22117,7 @@
       "day": "Środa",
       "dayIndex": 2,
       "period": 1,
-      "subject": "brak",
+      "subject": "5B,5D 105 zaj uni",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -22332,11 +22130,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 1,
-      "subject": "dor.zaw.",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -22552,7 +22350,7 @@
       "group": "",
       "wfGroup": "",
       "teacher": "M. Baranowska",
-      "room": "214",
+      "room": "309",
       "groups": []
     },
     {
@@ -22865,7 +22663,7 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 7,
-      "subject": "5B,5D zaj uni",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -22932,7 +22730,7 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 8,
-      "subject": "5B,5D zaj uni",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
       "teacher": "brak",
@@ -23178,7 +22976,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "G. Kubiak",
-      "room": "pc1",
+      "room": "pc3",
       "groups": [
         "2/2"
       ]
@@ -23290,7 +23088,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "G. Kubiak",
-      "room": "pc1",
+      "room": "pc3",
       "groups": [
         "2/2"
       ]
@@ -23452,11 +23250,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 5,
-      "subject": "brak",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -23534,11 +23332,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 6,
-      "subject": "brak",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -23564,7 +23362,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "M. Geruzel",
-      "room": "318",
+      "room": "pc1",
       "groups": [
         "1/2"
       ]
@@ -23912,11 +23710,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 0,
-      "subject": "dor.zaw.",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -23994,11 +23792,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 1,
-      "subject": "dor.zaw.",
+      "subject": "brak",
       "group": "",
       "wfGroup": "",
-      "teacher": "A. Gałdecka-Wysk",
-      "room": "220",
+      "teacher": "brak",
+      "room": "brak",
       "groups": []
     },
     {
@@ -24462,7 +24260,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "W. Korput",
-      "room": "301",
+      "room": "6",
       "groups": [
         "2/2"
       ]
@@ -24548,7 +24346,7 @@
       "group": "2/2",
       "wfGroup": "",
       "teacher": "W. Korput",
-      "room": "301",
+      "room": "6",
       "groups": [
         "2/2"
       ]
@@ -25236,11 +25034,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 7,
-      "subject": "brak",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -25301,11 +25099,11 @@
       "day": "Piątek",
       "dayIndex": 4,
       "period": 8,
-      "subject": "brak",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -25420,11 +25218,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 0,
-      "subject": "---",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -25452,7 +25250,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "R. Korytek",
-      "room": "pc2",
+      "room": "pc5",
       "groups": [
         "1/2"
       ]
@@ -25506,11 +25304,11 @@
       "day": "Czwartek",
       "dayIndex": 3,
       "period": 1,
-      "subject": "---",
+      "subject": "dor.zaw.",
       "group": "",
       "wfGroup": "",
-      "teacher": "brak",
-      "room": "brak",
+      "teacher": "A. Gałdecka-Wysk",
+      "room": "220",
       "groups": []
     },
     {
@@ -25538,7 +25336,7 @@
       "group": "1/2",
       "wfGroup": "",
       "teacher": "R. Korytek",
-      "room": "pc2",
+      "room": "pc5",
       "groups": [
         "1/2"
       ]
