@@ -2,10 +2,11 @@
   "base": "base.json",
   "week": 8,
   "substitutionFiles": [
-    "tydzien_8/zastepstwa-2026-10-19.json"
+    "tydzien_8/zastepstwa-2026-10-19.json",
+    "tydzien_8/zastepstwa-2026-10-20.json"
   ],
   "metadata": {
-    "substitutionsDate": "2026-10-19",
-    "substitutionsUpdatedAt": "2026-10-19T13:12+02:00"
+    "substitutionsDate": "2026-10-20",
+    "substitutionsUpdatedAt": "2026-10-19T18:19+02:00"
   }
 }
